@@ -1,0 +1,13 @@
+module.exports = [{
+      plugin: require('../../node_modules/gatsby-plugin-mdx/gatsby-browser.js'),
+      options: {"plugins":[],"extensions":[".md",".mdx"],"remarkPlugins":[[null,{"type":"yaml","marker":"-"}],null],"rehypePlugins":[null,null],"gatsbyRemarkPlugins":[],"defaultLayouts":{"default":"C:\\Users\\Shao\\Documents\\zozo-ui\\node_modules\\gatsby-theme-docz\\src\\base\\Layout.js"},"lessBabel":false,"mediaTypes":["text/markdown","text/x-markdown"],"root":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz"},
+    },{
+      plugin: require('../../node_modules/gatsby-plugin-react-helmet-async/gatsby-browser.js'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('../../node_modules/gatsby-theme-docz/gatsby-browser.js'),
+      options: {"plugins":[],"themeConfig":{},"src":"./","gatsbyRoot":null,"themesDir":"src","mdxExtensions":[".md",".mdx"],"docgenConfig":{},"menu":[],"mdPlugins":[],"hastPlugins":[],"ignore":[],"typescript":true,"ts":false,"propsParser":true,"props-parser":true,"debug":false,"native":false,"openBrowser":null,"o":null,"open":null,"open-browser":null,"root":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz","base":"/","source":"./","gatsby-root":null,"files":"./components/**/*.{md,markdown,mdx}","public":"/public","dest":"doc-site","d":".docz/dist","editBranch":"master","eb":"master","edit-branch":"master","config":"","title":"zo-ui","description":"组件库测试","host":"localhost","port":3000,"p":3000,"separator":"-","paths":{"root":"C:\\Users\\Shao\\Documents\\zozo-ui","templates":"C:\\Users\\Shao\\Documents\\zozo-ui\\node_modules\\docz-core\\dist\\templates","docz":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz","cache":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\.cache","app":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app","appPackageJson":"C:\\Users\\Shao\\Documents\\zozo-ui\\package.json","appTsConfig":"C:\\Users\\Shao\\Documents\\zozo-ui\\tsconfig.json","gatsbyConfig":"C:\\Users\\Shao\\Documents\\zozo-ui\\gatsby-config.js","gatsbyBrowser":"C:\\Users\\Shao\\Documents\\zozo-ui\\gatsby-browser.js","gatsbyNode":"C:\\Users\\Shao\\Documents\\zozo-ui\\gatsby-node.js","gatsbySSR":"C:\\Users\\Shao\\Documents\\zozo-ui\\gatsby-ssr.js","importsJs":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app\\imports.js","rootJs":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app\\root.jsx","indexJs":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app\\index.jsx","indexHtml":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app\\index.html","db":"C:\\Users\\Shao\\Documents\\zozo-ui\\.docz\\app\\db.json"}},
+    },{
+      plugin: require('../../node_modules/gatsby-theme-docz/gatsby-browser.js'),
+      options: {"plugins":[]},
+    }]

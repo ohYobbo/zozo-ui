@@ -1,5 +1,45 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/.vscode
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+/site
+# testing
+/coverage
+
+# production
+/build
+/dist
+/lib
+/esm
+/doc-site
+/types
+
+# umi
+.umi
+.umi-production
+.env.local
+
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 node_modules
+<<<<<<< HEAD
 # .docz
 # esm
 # lib
 # doc-site
+=======
+>>>>>>> 1f0ce7704ee8e9922aeff0055642217e5cb9d582
