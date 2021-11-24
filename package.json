@@ -1,6 +1,6 @@
 {
   "name": "zo-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "组件库测试",
   "main": "lib/index.js",
   "license": "MIT",
@@ -88,5 +88,9 @@
     "esm/**/style/*",
     "lib/**/style/*",
     "*.less"
-  ]
+  ],
+  "authors": {
+    "name": "zozo",
+    "email": "cz18627754737@gmail.com"
+  }
 }
