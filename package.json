@@ -1,17 +1,32 @@
 {
-  "name": "zo",
+  "name": "zo-ui",
   "version": "1.0.0",
   "description": "组件库测试",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "module": "esm/index.js",
   "scripts": {
     "dev": "docz dev",
     "start": "npm run dev",
     "build:doc": "rimraf doc-site && docz build",
     "preview:doc": "docz serve",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "clean": "rimraf lib esm dist",
+    "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
+    "build": "npm run clean && npm run build:types && gulp"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/react": "^17.0.36",
@@ -19,9 +34,15 @@
     "@types/styled-components": "^5.1.15",
     "@umijs/fabric": "^2.8.1",
     "commitizen": "^4.2.4",
+    "cpr": "^3.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "docz": "^2.3.1",
     "gatsby-plugin-less": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-less": "^5.0.0",
     "husky": "^7.0.4",
     "less": "^4.1.2",
     "lint-staged": "^12.1.2",
@@ -37,6 +58,7 @@
     "react-use": "^17.3.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.3",
+    "through2": "^4.0.2",
     "typescript": "^4.5.2"
   },
   "lint-staged": {
@@ -61,7 +83,10 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "prop-types": "^15.7.2"
-  }
+  "sideEffects": [
+    "dist/*",
+    "esm/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ]
 }
