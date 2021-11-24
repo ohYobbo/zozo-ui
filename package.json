@@ -89,7 +89,6 @@
     "lib/**/style/*",
     "*.less"
   ],
-  "registry": "https://registry.npmjs.org/",
   "authors": {
     "name": "zozo",
     "email": "cz18627754737@gmail.com"
